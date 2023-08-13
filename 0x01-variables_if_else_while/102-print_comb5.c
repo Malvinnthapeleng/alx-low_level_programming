@@ -6,32 +6,25 @@
  *@num: The number to print
  */
 
-void printTwoDigitNumber(int num)
-{
-	putchar('0' + num / 10);
-	putchar('0' + num % 10);
-}
+
 
 int main(void)
 {
-	int i, j;
+        int i, j;
 
-	for (i = 0; i < 100; ++i)
-	{
-		for (j = i; j < 100; ++j)
-		{
-			printTwoDigitNumber(i);
-			putchar(' ');
-			printTwoDigitNumber(j);
+        for (i = 0; i < 100; i++)
+        {
+            for (j = i + 1; j < 100; j++)
+            if (i != j)
+            {
+            printf("%02d %02d", i, j);
+            if (i !=98 || j !=99)
+            {
+            printf(", ");
+            }
+            }
+        }
+        putchar('\n');
 
-			if (j != 99 || i != 98)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
-
-	return (0);
+        return (0);
 }
