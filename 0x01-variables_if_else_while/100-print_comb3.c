@@ -1,22 +1,21 @@
 #include <stdio.h>
 /**
  * main - function
- * Return (0) (Success)
+ * Return: (0) (Success)
  */
 
 int main(void)
 {
-	int one = '0';
-	int ten = '0';
+	int one = 0;
+	int ten = 0;
 
-	for (ten = '0'; ten <= 9; ten++)
+	for (ten = 0; ten <= 9; ten++)
 	{
-		for (one = '0'; one <= 9; one++)
+		for (one = 0; one <= 9; one++)
 		{
 			if (!((one == ten) || (ten > one)))
 			{
-				putchar(ten);
-				putchar(one);
+				putchar("%d%d", one, ten);
 				if (!((one == 9) && (ten == '8')))
 				{
 					putchar(',');
