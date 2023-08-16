@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- * main - function that checks for alphabetic character
+ *_isalpha - function that checks for alphabetic character
+ *@c:checks for alphabetic character.
  * Return: 1 if c is a letter, lowercase or uppercase. 0 otherwise
  */
 
 int _isalpha(int c)
 {
-	int c;
+
 	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 	{
 		return (1);
@@ -16,3 +17,4 @@ int _isalpha(int c)
 		return (0);
 	}
 	_putchar('\n');
+}
