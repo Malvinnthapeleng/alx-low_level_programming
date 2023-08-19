@@ -19,17 +19,17 @@ void print_times_table(int n)
 			product = num * multi;
 			if (product <= 99)
 				_putchar(' ');
-			if (product >= 100)
+			if (product >= 9)
 			{
-				_putchar((product / 100) + 48);
-				_putchar(((product / 10)) % +48);
+				_putchar((product / 100));
+				_putchar(((product / 10)) % 10);
 			}
 			else if (product <= 99 && product >= 10)
 			{
-				_putchar((product / 10) + 48);
+				_putchar((product / 10));
 			}
-			_putchar((product % 10) + 48);
 			}
 		}
 	}
+	/*_putchar('\n');*/
 }
