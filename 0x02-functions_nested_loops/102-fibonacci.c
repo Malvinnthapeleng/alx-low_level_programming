@@ -10,7 +10,7 @@ int main(void)
 	long int fib[50];
 
 	fib[0] = 1;
-	fib[2] = 2;
+	fib[1] = 2;
 	printf("%ld, %ld, ", fib[0], fib[1]);
 
 	for (i = 2; i < 50; i++)
