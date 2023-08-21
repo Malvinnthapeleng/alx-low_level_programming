@@ -7,9 +7,10 @@
 
 int _strlen(char *s)
 {
-	size_t length = 0;
+	int i;
+	int string_count = 0;
 
-	while (*str++)
-	length++;
-	return (length);
+	for (i = 0; s[i] != '\0'; i++)
+		string_count++;
+	return (string_count);
 }
