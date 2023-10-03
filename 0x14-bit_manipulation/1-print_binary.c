@@ -6,8 +6,8 @@
 */
 void print_binary(unsigned long int n)
 {
-int i;
 unsigned long int mask = 1UL << 63;
+int leading_zeros = 0;
 
 if (n == 0)
 {
@@ -15,13 +15,17 @@ _putchar('0');
 return;
 }
 
-for (i = 0; i < 64; i++)
+while (mask)
 {
-if ((n & mask) != 0)
+if (n & mask)
+{
+leading_zeros = 1;
 _putchar('1');
-else
+}
+else if (leading_zeros)
+{
 _putchar('0');
-
+}
 mask >>= 1;
 }
 }
