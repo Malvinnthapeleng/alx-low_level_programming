@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdio.h>  /* Include stdio.h for perror */
-#include <stdlib.h> /* Include stdlib.h for memory management */
+#include <stdio.h>
+#include <stdlib.h>
 /**
 * read_textfile - Read text file and print to STDOUT.
 * @filename: Name of the text file to read.
